@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+
+    background-color:#f4f4f4;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.header{
+    height: 60px;
+    padding: 10px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid lightgray;
+}
+.header .logo{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .logo .logo-icon::before{
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    
+    background-color:#f4f4f4;
+}
+.header .logo .logo-icon{
+    position: relative;
+    margin-right: 10px;
+   height: 12px ;
+   width: 12px;
+   border-radius: 50%;
+
+   background-color: black;
+}
+.header .logo span{
+    font-weight: bold;
+}
+/* menu styling */
+.header .menu ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.header .menu ul li{
+    list-style: none;
+    margin-right: 2em;
+}
+.header .menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    opacity: 1;
+    transition: all 0.3s ease;
+    
+}
+.header .menu ul li a:hover{
+    opacity: 0.4;
+}
+ .btn{
+    padding: 5px 15px;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(26, 161, 240);
+    color:#fff; 
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+} 
+
+.btn:hover{
+    background-color:  rgb(4, 124, 204);
+}
+/*form styling*/
+.content{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+.content form{
+    width: 400px;
+   
+}
+.content .title{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+form .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+   
+}
+form .input-box input{
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    font-size: 14px;
+    transition: all 0.1s ease;
+}
+form .input-box input:focus{
+    box-shadow: 0px 0px 3px lightgrey;
+}
+form .input-box input::placeholder{
+    color: grey;
+}
+form .input-box i{
+    position: absolute;
+     right: 15px;
+     width: 30px;
+     height: 100%;
+     line-height: 50px;
+     text-align: center;
+    color: lightgray;
+   font-size: 18px;
+   
+}
+.term-box{
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+.term-box span{
+margin-left: 5px;
+}
+.text{
+    margin: 25px 0px;
+    text-align: center;
+    color: gray;
+}
+.acc-btn{
+    width: 100%;
+    height: 40px;
+     outline: none;
+     border: 0;
+     line-height: 40px;
+     border-radius: 10px;
+    background-color: gainsboro;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    font-weight: 600;
+
+}
+.acc-btn:hover{
+    background-color:lightgray;
+}
+.acc-btn i{
+    color: grey;
+    font-size: 17px;
+    
+}
+.text2 {
+    margin: 25px 0px;
+    text-align: center;
+    
+}
+.text2 a{
+    color: gray;
+    text-decoration: underline;
+}
